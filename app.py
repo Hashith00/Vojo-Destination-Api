@@ -4,6 +4,10 @@ import requests
 
 app = Flask(__name__)
 
+@app.route('/', methods = ['GET'])
+def returnasci():
+    return "Hello Flask Server"
+
 @app.route('/api', methods = ['GET'])
 def returnasci():
     d = {}
